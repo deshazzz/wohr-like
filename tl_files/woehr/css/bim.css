@@ -28,7 +28,7 @@
 .bim .mod_login .checkbox_container label
 {
 	display: inline-block;
-	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .bim .mod_login .submit_container input.submit
@@ -172,7 +172,7 @@
 
 .bim .ce_downloads button
 {
-	padding-left: 20px;
+	padding-right: 20px;
 	background-image: none !important;
 }
 
