@@ -397,8 +397,8 @@ th {
 
 @font-face {
 	font-family: 'Glyphicons Halflings';
-	src: url('/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot');
-	src: url('/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')
+	src: url('../../js/glyphicons-halflings-regular.eot');
+	src: url('../../js/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../js/glyphicons-halflings-regular.woff2') format('woff2'), url('../../js/glyphicons-halflings-regular.woff') format('woff'), url('../../js/glyphicons-halflings-regular.ttf') format('truetype'), url('../../js/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')
 }
 
 .glyphicon {
@@ -6295,7 +6295,7 @@ select {
 		position: absolute;
 		top: 10px;
 		width: 150px;
-		right: 75px
+		right: 95px
 	}
 }
 
