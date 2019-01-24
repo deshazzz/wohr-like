@@ -1,0 +1,200 @@
+/* LOGIN */
+
+.bim .mod_login .formbody
+{
+	width: 25%;
+}
+
+.bim .mod_login label
+{
+	display: block;
+	margin-top: 20px;
+}
+
+.bim .mod_login input
+{
+	width: 90%;
+	
+    border: 0;
+    padding: 5px;
+}
+
+.bim .mod_login .checkbox_container input
+{
+	display: inline-block;
+	width: auto;
+}
+
+.bim .mod_login .checkbox_container label
+{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.bim .mod_login .submit_container input.submit
+{
+	margin: 10px 0 20px 0;
+	background-image: none;
+}
+
+@media (max-width: 767px)
+{
+	.bim .mod_login .formbody
+	{
+		width: 100%;
+	}
+	
+	.bim .mod_login input
+	{
+		width: 100%;
+	}	
+}
+
+/* REGISTRATION */
+
+.bim .mod_registration .fields
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%
+}
+
+.bim .mod_registration .widget
+{
+	width: 25%;
+}
+
+.bim .mod_registration label
+{
+	display: block;
+	margin-top: 20px;
+}
+
+.bim .mod_registration input
+{
+	width: 90%;
+    border: 0;
+    padding: 5px;
+}
+
+.bim .mod_registration .captcha_text
+{
+	display: block;
+	margin-top: 10px;
+}
+
+.bim .mod_registration .submit_container
+{
+	width: 25%;
+}
+
+.bim .mod_registration .submit_container input.submit
+{
+	margin: 10px 0 0 0;
+	width: 90%;
+	background-image: none;
+}
+
+@media (max-width: 767px)
+{
+	.bim .mod_registration .fields
+	{
+		display: block;
+	}
+	
+	.bim .mod_registration .widget
+	{
+		width: 100%;
+	}
+	
+	.bim .mod_registration input
+	{
+		width: 100%;
+	}
+	
+	.bim .mod_registration .submit_container
+	{
+		width: 100%
+	}
+	
+	.bim .mod_registration .submit_container input.submit
+	{
+		width: 100%;
+	}
+}
+
+/* CONFIRMATION */
+
+.bim .confirmtext
+{
+	width: 40%;
+}
+
+@media (max-width: 767px)
+{
+	.bim .confirmtext
+	{
+		width: 100%;
+	}
+}
+
+/* DOWNLOADS */
+
+.bim .ce_downloads img
+{
+	width: 100%;
+	height: auto;
+}
+
+.bim .ce_downloads .list
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1.5%;
+	width: 100%;
+}
+
+.bim .ce_downloads .list .item
+{
+	margin: 1.5% 1.5% 0 1.5%;
+	width: 22%;
+}
+
+.bim .ce_downloads a
+{
+	text-decoration: none !important;
+}
+
+.bim .ce_downloads h4
+{
+	margin: 20px 0;
+}
+
+.bim .ce_downloads button
+{
+	padding-right: 20px;
+	background-image: none !important;
+}
+
+@media (max-width: 767px)
+{
+	.bin .ce_downloads .list
+	{
+
+	}
+	
+	.bim .ce_downloads .list .item
+	{
+		width: 47%;
+	}
+	
+	.bim .ce_downloads h4
+	{
+		text-align: center;
+	}
+	
+	.bim .ce_downloads button
+	{
+		margin-top: 0 !important;
+	}
+}
