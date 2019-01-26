@@ -20,10 +20,9 @@
                     <div class="footer-widget ">
                         <div class="footer-title">Company</div>
                         <ul class="list-unstyled">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Press</a></li>
-                            <li><a href="#">Legal & Privacy</a></li>
+                            <li><a href="<?php site_url(); ?>">Home</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Events</a></li>
                         </ul>
                     </div>
                 </div>
@@ -35,8 +34,8 @@
                         <ul class="list-unstyled">
                             <li><a href="#">News</a></li>
                             <li><a href="#">Contact us</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
+                            <li><a href="#">About us</a></li>
+\                        </ul>
                     </div>
                 </div>
                 <!-- /.footer-links -->
@@ -45,9 +44,6 @@
                     <div class="footer-widget ">
                         <div class="footer-title">Social</div>
                         <ul class="list-unstyled">
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Google +</a></li>
-                            <li><a href="#">Linked In</a></li>
                             <li><a href="#">Facebook</a></li>
                         </ul>
                     </div>

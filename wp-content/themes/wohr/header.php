@@ -13,8 +13,8 @@
   <link rel="alternate" hreflang="ar" href="#">
   <meta name="google-site-verification" content="IyxVWTNVbAO8gige7CfwG_QJzVP2_bm-ngdm8pf0Gkk">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/main-ar.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/footer-ar.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/main.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/footer.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css/bim.css">
 
   <script src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/js_min/app.min.js"></script>
@@ -79,17 +79,17 @@ window.location.href=data.selectedData.value;languageIndex=data.selectedIndex}})
               <nav class="col-sm-12 col-md-12 col-lg-12 mod_navigation block">
                 <a href="en/#skipNavigation15" class="invisible">Skip navigation</a>
                 <ul class="level_1">
-                  <li data-alias="services" class="submenu mnl1 products-navi sibling first"><a href="services.html"
+                  <li data-alias="services" class="submenu mnl1 products-navi sibling first"><a href="<?php  site_url();?>?page_id=11"
                       title="services" class="submenu mnl1 products-navi sibling first">Services</a>
                   </li>
-                  <li data-alias="Gallery" class="submenu sibling"><a href="gallery.html" title="Gallery" class="submenu sibling">Gallery</a>
+                  <li data-alias="Gallery" class="submenu sibling"><a href="<?php  site_url();?>?page_id=15" title="Gallery" class="submenu sibling">Gallery</a>
                   </li>
-                  <li data-alias="about-woehr" class="submenu mnl4 sibling"><a href="aboutus.html" title="About Roxy parking"
+                  <li data-alias="about-woehr" class="submenu mnl4 sibling"><a href="<?php  site_url();?>?page_id=5" title="About Roxy parking"
                       class="submenu mnl4 sibling">About Roxy parking</a>
                   </li>
-                  <li data-alias="news" class="mnl5 sibling"><a href="news.html" title="New version: platform" class="mnl5 sibling">News</a></li>
-                  <li data-alias="events" class="mnl5 sibling"><a href="en/events.html" title="New events" class="mnl5 sibling">Events</a></li>
-                  <li data-alias="contact" class="submenu mnl7 sibling last"><a href="contactus.html" title="Contact"
+                  <li data-alias="news" class="mnl5 sibling"><a href="<?php  site_url();?>?page_id=13" title="New version: platform" class="mnl5 sibling">News</a></li>
+                  <li data-alias="events" class="mnl5 sibling"><a href="<?php  site_url();?>?page_id=9" title="New events" class="mnl5 sibling">Events</a></li>
+                  <li data-alias="contact" class="submenu mnl7 sibling last"><a href="<?php  site_url();?>?page_id=7" title="Contact"
                       class="submenu mnl7 sibling last">Contact Us</a>
                   </li>
                 </ul>

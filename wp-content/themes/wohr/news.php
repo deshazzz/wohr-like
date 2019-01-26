@@ -12,7 +12,7 @@ get_header();
 News</h1>
 
 <div class="mod_newsarchive block">
-<a class="teaser block first even" href="news-single.html">
+<a class="teaser block first even" href="<?php site_url(); ?>?page_id=17">
 <div class="row">
 <div class="date col-sm-2 col-md-2 col-lg-2 ">
 <time datetime="2017-12-19T11:23:00+01:00">
@@ -34,7 +34,7 @@ News</h1>
 </div>
 </div>
 </a>
-<a class="teaser block odd" href="news-single.html">
+<a class="teaser block odd" href="<?php site_url(); ?>?page_id=17">
 <div class="row">
 <div class="date col-sm-2 col-md-2 col-lg-2 ">
 <time datetime="2017-11-02T11:03:00+01:00">
@@ -56,7 +56,7 @@ News</h1>
 </div>
 </div>
 </a>
-<a class="teaser block even" href="news-single.html">
+<a class="teaser block even" href="<?php site_url(); ?>?page_id=17">
 <div class="row">
 <div class="date col-sm-2 col-md-2 col-lg-2 ">
 <time datetime="2017-10-09T16:28:00+02:00">
@@ -78,7 +78,7 @@ News</h1>
 </div>
 </div>
 </a>
-<a class="teaser block odd" href="news-single.html">
+<a class="teaser block odd" href="<?php site_url(); ?>?page_id=17">
 <div class="row">
 <div class="date col-sm-2 col-md-2 col-lg-2 ">
 <time datetime="2017-09-29T12:50:00+02:00">
@@ -101,7 +101,7 @@ News</h1>
 </div>
 </a>
 
-<a class="teaser block odd" href="news-single.html">
+<a class="teaser block odd" href="<?php site_url(); ?>?page_id=17">
 <div class="row">
 <div class="date col-sm-2 col-md-2 col-lg-2 ">
 <time datetime="2017-06-08T12:50:00+02:00">
@@ -123,7 +123,7 @@ News</h1>
 </div>
 </div>
 </a>
-<a class="teaser block even" href="news-single.html">
+<a class="teaser block even" href="<?php site_url(); ?>?page_id=17">
 <div class="row">
 <div class="date col-sm-2 col-md-2 col-lg-2 ">
 <time datetime="2017-04-28T00:00:00+02:00">
@@ -145,7 +145,7 @@ News</h1>
 </div>
 </div>
 </a>
-<a class="teaser block odd" href="news-single.html">
+<a class="teaser block odd" href="<?php site_url(); ?>?page_id=17">
 <div class="row">
 <div class="date col-sm-2 col-md-2 col-lg-2 ">
 <time datetime="2017-04-21T01:00:00+02:00">
@@ -167,7 +167,7 @@ News</h1>
 </div>
 </div>
 </a>
-<a class="teaser block even" href="news-single.html">
+<a class="teaser block even" href="<?php site_url(); ?>?page_id=17">
 <div class="row">
 <div class="date col-sm-2 col-md-2 col-lg-2 ">
 <time datetime="2017-03-21T11:00:00+01:00">
@@ -189,7 +189,7 @@ News</h1>
 </div>
 </div>
 </a>
-<a class="teaser block odd" href="news-single.html">
+<a class="teaser block odd" href="<?php site_url(); ?>?page_id=17">
 <div class="row">
 <div class="date col-sm-2 col-md-2 col-lg-2 ">
 <time datetime="2017-03-02T01:00:00+01:00">
@@ -211,7 +211,7 @@ News</h1>
 </div>
 </div>
 </a>
-<a class="teaser block even" href="news-single.html">
+<a class="teaser block even" href="<?php site_url(); ?>?page_id=17">
 <div class="row">
 <div class="date col-sm-2 col-md-2 col-lg-2 ">
 <time datetime="2017-01-23T16:13:00+01:00">

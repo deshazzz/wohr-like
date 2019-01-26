@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div id="container">
+    <div id="container_home">
       <div id="main">
         <div class="inside">
           <div class="mod_article first last block" id="fullscreen-slider-126">
