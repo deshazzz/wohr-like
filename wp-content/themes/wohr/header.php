@@ -13,8 +13,15 @@
   <link rel="alternate" hreflang="ar" href="#">
   <meta name="google-site-verification" content="IyxVWTNVbAO8gige7CfwG_QJzVP2_bm-ngdm8pf0Gkk">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <?php 
+    if(pll_current_language() === "en"){
+  ?>
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/main.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/footer.css">
+    <?php }else { ?>
+      <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/main-ar.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/footer-ar.css">
+    <?php } ?>
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css/bim.css">
 
   <script src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/js_min/app.min.js"></script>
@@ -42,10 +49,19 @@
           <!-- indexer::stop -->
           <nav class="mod_changelanguage col-sm-3 col-md-2 col-lg-2 pull-right block" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
             <select id="changelanguage" class="level_1" ONCHANGE="location = this.options[this.selectedIndex].value; ">
-                <option class="active" data-imagesrc="<?php echo get_template_directory_uri(); ?>/tl_files/img/flags/en.png" selected="selected" value="#"
+                
+                
+                <option value="<?php echo site_url().'/en'; ?>" class="<?php  if(pll_current_language() === "en"){ echo 'active';} ?>"
+                 data-imagesrc="<?php echo get_template_directory_uri(); ?>/tl_files/img/flags/en.png"
+                 <?php  if(pll_current_language() === "en"){ echo 'selected="selected"'; } ?>
                     title="&nbsp;" hreflang="en" lang="en">English</option>
-                <option value="#" data-imagesrc="<?php echo get_template_directory_uri(); ?>/tl_files/img/flags/eg.png" title="&nbsp;"
-                    hreflang="ar" lang="ar">Arabic</option>
+
+
+
+                <option value="<?php echo site_url().'/ar'; ?>" class="<?php  if(pll_current_language() === "ar"){ echo 'active';} ?>"
+                 data-imagesrc="<?php echo get_template_directory_uri(); ?>/tl_files/img/flags/eg.png" 
+                <?php  if(pll_current_language() === "ar"){ echo 'selected="selected"'; } ?>  hreflang="ar" lang="ar">Arabic</option>
+                 title="&nbsp;"
             </select>
             <script src="<?php echo get_template_directory_uri(); ?>/tl_files/js/jquery.ddslick.min.js"></script>
             <script>$(document).ready(function(){var languageIndex=null;$('#changelanguage').ddslick({width:'inherit',onSelected:function(data){if(data.selectedIndex!=languageIndex&&languageIndex!=null)
