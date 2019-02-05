@@ -35,7 +35,7 @@ get_header();
                 <div class="col-md-5">
                     <div id="map-container-google-11" class="z-depth-1-half map-container-6">
                         <img class="about-us-img" src="<?php echo str_replace('-150x150', '' , $gallery[0]);  ?>"
-                            height="300" width="388" alt="">
+                            height="250" width="388" alt="">
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -61,7 +61,7 @@ get_header();
                 <div class="col-md-5">
                     <div id="map-container-google-11" class="z-depth-1-half map-container-6">
                         <img class="about-us-img" src="<?php echo str_replace('-150x150', '' , $gallery[1]);  ?>"
-                            height="300" width="388" alt="">
+                            height="250" width="388" alt="">
                     </div>
                 </div>
             </div>
