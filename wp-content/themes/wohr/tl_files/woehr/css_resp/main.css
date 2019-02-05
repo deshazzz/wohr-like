@@ -3108,6 +3108,9 @@ table th[class*="col-"] {
 }
 
 @media screen and (max-width:767px) {
+	.about-us-img {
+		width: 248px;
+	}
 	.table-responsive {
 		width: 100%;
 		margin-bottom: 15px;
