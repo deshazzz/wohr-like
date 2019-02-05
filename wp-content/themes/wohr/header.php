@@ -14,11 +14,12 @@
   <meta name="google-site-verification" content="IyxVWTNVbAO8gige7CfwG_QJzVP2_bm-ngdm8pf0Gkk">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php 
-    if(pll_current_language() === "en"){
+    if(qtrans_getLanguage() === "en"){
   ?>
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/main.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/footer.css">
     <?php }else { ?>
+      <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css"/> 
       <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/main-ar.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/css_resp/footer-ar.css">
     <?php } ?>
@@ -51,16 +52,16 @@
             <select id="changelanguage" class="level_1" ONCHANGE="location = this.options[this.selectedIndex].value; ">
                 
                 
-                <option value="<?php echo site_url().'/en'; ?>" class="<?php  if(pll_current_language() === "en"){ echo 'active';} ?>"
+                <option value="<?php echo site_url().'/en'; ?>" class="<?php  if(qtrans_getLanguage() === "en"){ echo 'active';} ?>"
                  data-imagesrc="<?php echo get_template_directory_uri(); ?>/tl_files/img/flags/en.png"
-                 <?php  if(pll_current_language() === "en"){ echo 'selected="selected"'; } ?>
+                 <?php  if(qtrans_getLanguage() === "en"){ echo 'selected="selected"'; } ?>
                     title="&nbsp;" hreflang="en" lang="en">English</option>
 
 
 
-                <option value="<?php echo site_url().'/ar'; ?>" class="<?php  if(pll_current_language() === "ar"){ echo 'active';} ?>"
+                <option value="<?php echo site_url().'/ar'; ?>" class="<?php  if(qtrans_getLanguage() === "ar"){ echo 'active';} ?>"
                  data-imagesrc="<?php echo get_template_directory_uri(); ?>/tl_files/img/flags/eg.png" 
-                <?php  if(pll_current_language() === "ar"){ echo 'selected="selected"'; } ?>  hreflang="ar" lang="ar">Arabic</option>
+                <?php  if(qtrans_getLanguage() === "ar"){ echo 'selected="selected"'; } ?>  hreflang="ar" lang="ar">Arabic</option>
                  title="&nbsp;"
             </select>
             <script src="<?php echo get_template_directory_uri(); ?>/tl_files/js/jquery.ddslick.min.js"></script>
@@ -96,17 +97,17 @@ window.location.href=data.selectedData.value;languageIndex=data.selectedIndex}})
                 <a href="en/#skipNavigation15" class="invisible">Skip navigation</a>
                 <ul class="level_1">
                   <li data-alias="services" class="submenu mnl1 products-navi sibling first"><a href="<?php  site_url();?>?page_id=11"
-                      title="services" class="submenu mnl1 products-navi sibling first">Services</a>
+                      title="services" class="submenu mnl1 products-navi sibling first"><?php  if(qtrans_getLanguage() === "ar"){ echo 'خدمات';} else{echo 'Services';} ?></a>
                   </li>
-                  <li data-alias="Gallery" class="submenu sibling"><a href="<?php  site_url();?>?page_id=15" title="Gallery" class="submenu sibling">Gallery</a>
+                  <li data-alias="Gallery" class="submenu sibling"><a href="<?php  site_url();?>?page_id=15" title="Gallery" class="submenu sibling"><?php  if(qtrans_getLanguage() === "ar"){ echo 'المعرض';} else{echo 'Gallery';} ?></a>
                   </li>
                   <li data-alias="about-woehr" class="submenu mnl4 sibling"><a href="<?php  site_url();?>?page_id=5" title="About Roxy parking"
-                      class="submenu mnl4 sibling">About Roxy parking</a>
+                      class="submenu mnl4 sibling"> <?php  if(qtrans_getLanguage() === "ar"){ echo 'عن جراج روكسى';} else{echo 'About Roxy parking';} ?></a>
                   </li>
-                  <li data-alias="news" class="mnl5 sibling"><a href="<?php  site_url();?>?page_id=13" title="New version: platform" class="mnl5 sibling">News</a></li>
-                  <li data-alias="events" class="mnl5 sibling"><a href="<?php  site_url();?>?page_id=9" title="New events" class="mnl5 sibling">Events</a></li>
+                  <li data-alias="news" class="mnl5 sibling"><a href="<?php  site_url();?>?page_id=13" title="New version: platform" class="mnl5 sibling"> <?php  if(qtrans_getLanguage() === "ar"){ echo 'الأخبار';} else{echo 'News';} ?></a></li>
+                  <li data-alias="events" class="mnl5 sibling"><a href="<?php  site_url();?>?page_id=9" title="New events" class="mnl5 sibling"><?php  if(qtrans_getLanguage() === "ar"){ echo 'احداث';} else{echo 'Events';} ?></a></li>
                   <li data-alias="contact" class="submenu mnl7 sibling last"><a href="<?php  site_url();?>?page_id=7" title="Contact"
-                      class="submenu mnl7 sibling last">Contact Us</a>
+                      class="submenu mnl7 sibling last"><?php  if(qtrans_getLanguage() === "ar"){ echo 'اتصل بنا';} else{echo 'Contact Us';} ?></a>
                   </li>
                 </ul>
                 <a id="skipNavigation15" class="invisible">&nbsp;</a>
@@ -122,63 +123,7 @@ window.location.href=data.selectedData.value;languageIndex=data.selectedIndex}})
         <div class="inside">
           <div class="row">
             <!-- indexer::stop -->
-            <nav class="mod_navigation col-sm-4 col-md-4 col-lg-4 block" id="column1">
-              <a href="en/#skipNavigation20" class="invisible">Skip navigation</a>
-              <div class="inside">
-                <ul class="level_1">
-                  <li data-alias="products" data-target="" id="products" class="submenu mnl1 products-navi sibling first"><a
-                      href="en/product-finder.html" title="Products" class="submenu mnl1 products-navi sibling first">Products</a>
-                  </li>
-                  <li data-alias="projects-184" data-target="" id="projects" class="submenu mnl3 sibling"><a href="en/all-projects.html"
-                      title="Projects" class="submenu mnl3 sibling">Projects</a>
-                    <div class="inside">
-                      <ul class="level_2">
-                        <li data-alias="all-projects" data-target="" id="all-projects" class="mnl2 first"><a href="en/all-projects.html"
-                            title="All Projects" class="mnl2 first">All Projects</a></li>
-                        <li data-alias="renovation-projects" data-target="" id="renovation-projects" class="last"><a
-                            href="en/renovation-projects.html" title="Renovation Projects" class="last">Renovation
-                            Projects</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li data-alias="Gallery" data-target="" id="Gallery" class="submenu sibling"><a href="gallery.html"
-                      title="Gallery" class="submenu sibling">Gallery</a>
-                  </li>
-                  <li data-alias="about-woehr" data-target="" id="about-woehr" class="submenu mnl4 sibling"><a href="en/insights.html"
-                      title="About Wöhr" class="submenu mnl4 sibling">About Roxy Parking</a>
-                  </li>
-                  <li data-alias="downloads" data-target="" id="downloads" class="submenu mnl6 sibling"><a href="en/accessories.html"
-                      title="Downloads" class="submenu mnl6 sibling">Downloads</a>
-                    <div class="inside">
-                      <ul class="level_2">
-                        <li data-alias="accessories" data-target="" id="accessories" class="first"><a href="en/accessories.html"
-                            title="Accessories for" class="first">Accessories</a></li>
-                        <li data-alias="brochures" data-target="" id="brochures"><a href="en/brochures.html" title="Brochures Parking Solutions">Brochures</a></li>
-                        <li data-alias="cad-files" data-target="" id="cad-files"><a href="en/cad-files.html" title="CAD files">CAD
-                            files</a></li>
-                        <li data-alias="data-sheets" data-target="" id="data-sheets"><a href="en/data-sheets.html"
-                            title="Data sheets">Data sheets</a></li>
-                        <li data-alias="other-files" data-target="" id="other-files"><a href="en/other-files.html"
-                            title="Other files">Other files</a></li>
-                        <li data-alias="project-reports" data-target="" id="project-reports"><a href="en/project-reports.html"
-                            title="Project reports">Project reports</a></li>
-                        <li data-alias="press-132" data-target="" id="press"><a href="en/press-132.html" title="Press information">Press</a></li>
-                        <li data-alias="tender-texts" data-target="" id="tender-texts" class="last"><a href="en/tender-texts.html"
-                            title="Tender texts" class="last">Tender texts</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li data-alias="news" data-target="" id="news" class="mnl5 sibling"><a href="en/news.html" title="New version: platform"
-                      class="mnl5 sibling">News</a></li>
-                  <li data-alias="events" data-target="" id="events" class="mnl5 sibling"><a href="en/events.html"
-                      title="New events" class="mnl5 sibling">Events</a></li>
-                  <li data-alias="contact" data-target="" id="contact" class="submenu mnl7 sibling last"><a href="en/representatives.html"
-                      title="Contact" class="submenu mnl7 sibling last">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-              <a id="skipNavigation20" class="invisible">&nbsp;</a>
-            </nav>
+          
           </div><!-- class="row" -->
         </div>
       </div>

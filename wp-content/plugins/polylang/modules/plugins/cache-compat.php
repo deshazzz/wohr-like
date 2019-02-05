@@ -40,7 +40,7 @@ class PLL_Cache_Compat {
 			}());',
 			esc_js( apply_filters( 'pll_cookie_expiration', YEAR_IN_SECONDS ) ),
 			esc_js( PLL_COOKIE ),
-			esc_js( pll_current_language() ),
+			esc_js( qtrans_getLanguage() ),
 			esc_js( COOKIEPATH ),
 			$domain ? '; domain=' . esc_js( $domain ) : ''
 		);
@@ -54,7 +54,7 @@ class PLL_Cache_Compat {
 	 * @since 2.3
 	 */
 	public function do_not_cache_site_home() {
-		if ( ! defined( 'DONOTCACHEPAGE' ) && PLL()->options['browser'] && PLL()->options['hide_default'] && is_front_page() && pll_current_language() === pll_default_language() ) {
+		if ( ! defined( 'DONOTCACHEPAGE' ) && PLL()->options['browser'] && PLL()->options['hide_default'] && is_front_page() && qtrans_getLanguage() === pll_default_language() ) {
 			define( 'DONOTCACHEPAGE', true );
 		}
 	}

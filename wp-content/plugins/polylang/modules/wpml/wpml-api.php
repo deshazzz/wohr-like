@@ -143,7 +143,7 @@ class PLL_WPML_API {
 	 * @since 2.0
 	 */
 	public function wpml_add_language_form_field() {
-		$lang = pll_current_language();
+		$lang = qtrans_getLanguage();
 		$field = sprintf( '<input type="hidden" name="lang" value="%s" />', esc_attr( $lang ) );
 		$field = apply_filters( 'wpml_language_form_input_field', $field, $lang );
 		echo $field;
@@ -242,7 +242,7 @@ class PLL_WPML_API {
 	public function wpml_get_translated_slug( $slug, $post_type, $lang = null ) {
 		if ( isset( PLL()->translate_slugs ) ) {
 			if ( empty( $lang ) ) {
-				$lang = pll_current_language();
+				$lang = qtrans_getLanguage();
 			}
 
 			$slug = PLL()->translate_slugs->slugs_model->get_translated_slug( $post_type, $lang );

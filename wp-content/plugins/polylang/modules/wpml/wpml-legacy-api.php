@@ -116,7 +116,7 @@ if ( ! function_exists( 'icl_link_to_element' ) ) {
 		}
 
 		$pll_type = ( 'post' == $type || pll_is_translated_post_type( $type ) ) ? 'post' : ( 'term' == $type || pll_is_translated_taxonomy( $type ) ? 'term' : false );
-		if ( $pll_type && ( $lang = pll_current_language() ) && ( $tr_id = PLL()->model->$pll_type->get_translation( $id, $lang ) ) && ( 'term' === $pll_type || PLL()->links->current_user_can_read( $tr_id ) ) ) {
+		if ( $pll_type && ( $lang = qtrans_getLanguage() ) && ( $tr_id = PLL()->model->$pll_type->get_translation( $id, $lang ) ) && ( 'term' === $pll_type || PLL()->links->current_user_can_read( $tr_id ) ) ) {
 			$id = $tr_id;
 		} elseif ( ! $return_original_if_missing ) {
 			return '';
@@ -169,7 +169,7 @@ if ( ! function_exists( 'icl_object_id' ) ) {
 	 * @return int|null The object id of the translation, null if the translation is missing and $return_original_if_missing set to false
 	 */
 	function icl_object_id( $id, $type = 'post', $return_original_if_missing = false, $lang = false ) {
-		$lang = $lang ? $lang : pll_current_language();
+		$lang = $lang ? $lang : qtrans_getLanguage();
 
 		if ( 'nav_menu' === $type ) {
 			$theme = get_option( 'stylesheet' );
@@ -231,7 +231,7 @@ if ( ! function_exists( 'wpml_get_language_information' ) ) {
 			'text_direction'     => (bool) $lang->is_rtl,
 			'display_name'       => $lang->name, // Seems to be the post language name displayed in the current language, not a feature in Polylang
 			'native_name'        => $lang->name,
-			'different_language' => pll_current_language() !== $lang->slug,
+			'different_language' => qtrans_getLanguage() !== $lang->slug,
 		);
 	}
 }
@@ -381,6 +381,6 @@ if ( ! function_exists( 'icl_get_current_language' ) ) {
 	 * @return string Current language code
 	 */
 	function icl_get_current_language() {
-		return pll_current_language();
+		return qtrans_getLanguage();
 	}
 }

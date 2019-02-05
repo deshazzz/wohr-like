@@ -8,7 +8,8 @@ body {
 	padding: 0;
 	font-size: 100.01%;
 	text-align: right;
-	position: relative
+	position: relative;
+	font-family: 'DroidArabicKufiRegular';
 }
 
 select,
@@ -105,7 +106,7 @@ figcaption {
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 html {
-	font-family: "Roboto", sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
@@ -1481,7 +1482,7 @@ html {
 }
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #333;
@@ -2009,7 +2010,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: Menlo, Monaco, Consolas, "Courier New", monospace
+	font-family: 'DroidArabicKufiRegular'
 }
 
 code {
@@ -4647,19 +4648,19 @@ footer .inside:after,
 }
 
 @font-face {
-	font-family: 'CorporateS-Regular';
+	font-family: 'DroidArabicKufiRegular';
 	src: url('../../webfont/254F1C_0_0.eot');
 	src: url('../../webfont/254F1C_0_0.eot?#iefix') format('embedded-opentype'), url('../../webfont/254F1C_0_0.woff') format('woff'), url('../../webfont/254F1C_0_0.ttf') format('truetype')
 }
 
 @font-face {
-	font-family: 'CorporateS-Bold';
+	font-family: 'DroidArabicKufiRegular';
 	src: url('../../webfont/254F1C_1_0.eot');
 	src: url('../../webfont/254F1C_1_0.eot?#iefix') format('embedded-opentype'), url('../../webfont/254F1C_1_0.woff') format('woff'), url('../../webfont/254F1C_1_0.ttf') format('truetype')
 }
 
 @font-face {
-	font-family: 'CorporateS-Light';
+	font-family: 'DroidArabicKufiRegular';
 	src: url('../../webfont/254F1C_2_0.eot');
 	src: url('../../webfont/254F1C_2_0.eot?#iefix') format('embedded-opentype'), url('../../webfont/254F1C_2_0.woff') format('woff'), url('../../webfont/254F1C_2_0.ttf') format('truetype')
 }
@@ -4668,7 +4669,7 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: CorporateS-Light, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	margin: 9.5px 0;
 	color: #3c3c3c;
 	font-weight: normal;
@@ -4697,14 +4698,14 @@ h3 strong,
 h1 b,
 h2 b,
 h3 b {
-	font-family: CorporateS-Light, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	font-weight: normal
 }
 
 h1 em,
 h2 em,
 h3 em {
-	font-family: CorporateS-Bold, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	font-style: normal
 }
 
@@ -4726,7 +4727,7 @@ h3 {
 h4 {
 	font-size: 16px;
 	line-height: 19px;
-	font-family: CorporateS-Bold, Arial, sans-serif
+	font-family: 'DroidArabicKufiRegular'
 }
 
 h1 small {
@@ -4752,7 +4753,7 @@ h6::before {
 	background: #4c9fe6;
 	border: 2px solid red;
 	padding: 5px 10px;
-	font-family: CorporateS-Bold, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	content: "H5 und H6 sind nicht zu verwenden!";
 	font-family: inherit;
 	font-weight: 500;
@@ -4943,7 +4944,7 @@ p {
 strong,
 th,
 .table th {
-	font-family: CorporateS-Bold, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	font-weight: normal
 }
 
@@ -5053,7 +5054,7 @@ body {
 body {
 	margin: 0;
 	padding: 0 !important;
-	font-family: "Roboto", sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	font-size: 16px;
 	color: #3c3c3c;
 	background: #ebebeb !important
@@ -5067,6 +5068,7 @@ footer {
 
 #wrapper {
 	min-height: 100%;
+	padding-bottom: 20px;
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto auto auto
@@ -5345,7 +5347,7 @@ body.ie7 .controlnav {
 	background: #337ab7;
 	height: 50px;
 	width: 50px;
-	font-family: CorporateS-Bold, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	font-size: 40px;
 	line-height: 50px;
 	text-align: center
@@ -5494,7 +5496,7 @@ body.ie7 .controlnav {
 }
 
 .date time .day {
-	font-family: CorporateS-Bold, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	font-size: 40px;
 	line-height: 34px;
 	text-align: left;
@@ -5891,7 +5893,7 @@ body.ie7 .controlnav {
 }
 
 .mod_memberlist table tr td.name {
-	font-family: CorporateS-Bold, Arial, sans-serif
+	font-family: 'DroidArabicKufiRegular'
 }
 
 .mod_memberlist table tr td.last {
@@ -5928,7 +5930,7 @@ td.card {
 	height: 16px;
 	text-align: center;
 	cursor: pointer;
-	font-family: CorporateS-Bold, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	line-height: 18px
 }
 
@@ -6143,7 +6145,7 @@ select {
 }
 
 .addresses th {
-	font-family: CorporateS-Bold, Arial, sans-serif
+	font-family: 'DroidArabicKufiRegular'
 }
 
 .search-results form {
@@ -6567,7 +6569,7 @@ ul.social-icons li .youtube:hover {
 
 #mainnavi {
 	font-size: 18px;
-	font-family: CorporateS-Regular, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	position: absolute;
 	bottom: 0;
 	right: 0
@@ -6796,7 +6798,7 @@ ul.social-icons li .youtube:hover {
 }
 
 #woehr_subnavi #column3 h4 {
-	font-family: CorporateS-Bold, Arial, sans-serif
+	font-family: 'DroidArabicKufiRegular'
 }
 
 body.ie8 #woehr_subnavi,
@@ -7301,7 +7303,7 @@ body.ie7 #teasertext {
 }
 
 .productfinder #productfinder #filtersection .active {
-	font-family: CorporateS-Bold, Arial, sans-serif;
+	font-family: 'DroidArabicKufiRegular';
 	color: #000;
 	-webkit-transition: all 2s ease-out;
 	-moz-transition: all 2s ease-out;
@@ -7595,7 +7597,7 @@ body.ie7 #teasertext {
 	font-size: 23px;
 	line-height: 29px;
 	font-weight: normal !important;
-	font-family: CorporateS-Light, Arial, sans-serif !important;
+	font-family: 'DroidArabicKufiRegular' !important;
 	margin: 9.5px 0 !important
 }
 

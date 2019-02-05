@@ -54,7 +54,7 @@ class PLL_Jetpack {
 	 */
 	public function jetpack_widget_get_top_posts( $posts, $post_ids, $count ) {
 		foreach ( $posts as $k => $post ) {
-			if ( pll_current_language() !== pll_get_post_language( $post['post_id'] ) ) {
+			if ( qtrans_getLanguage() !== pll_get_post_language( $post['post_id'] ) ) {
 				unset( $posts[ $k ] );
 			}
 		}
@@ -76,7 +76,7 @@ class PLL_Jetpack {
 	 */
 	public function grunion_contact_form_field_html_filter( $r, $field_label, $id ) {
 		if ( function_exists( 'icl_translate' ) ) {
-			if ( pll_current_language() !== pll_default_language() ) {
+			if ( qtrans_getLanguage() !== pll_default_language() ) {
 				$label_translation = icl_translate( 'jetpack ', $field_label . '_label', $field_label );
 				$r = str_replace( $field_label, $label_translation, $r );
 			}

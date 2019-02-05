@@ -66,7 +66,7 @@ function pll_default_language( $field = 'slug' ) {
  * @return int|false|null post id of the translation if exists, false otherwise, null if the current language is not defined yet
  */
 function pll_get_post( $post_id, $slug = '' ) {
-	return ( $slug = $slug ? $slug : pll_current_language() ) ? PLL()->model->post->get( $post_id, $slug ) : null;
+	return ( $slug = $slug ? $slug : qtrans_getLanguage() ) ? PLL()->model->post->get( $post_id, $slug ) : null;
 }
 
 /**
@@ -79,7 +79,7 @@ function pll_get_post( $post_id, $slug = '' ) {
  * @return int|false|null term id of the translation if exists, false otherwise, null if the current language is not defined yet
  */
 function pll_get_term( $term_id, $slug = '' ) {
-	return ( $slug = $slug ? $slug : pll_current_language() ) ? PLL()->model->term->get( $term_id, $slug ) : null;
+	return ( $slug = $slug ? $slug : qtrans_getLanguage() ) ? PLL()->model->term->get( $term_id, $slug ) : null;
 }
 
 /**
@@ -92,7 +92,7 @@ function pll_get_term( $term_id, $slug = '' ) {
  */
 function pll_home_url( $lang = '' ) {
 	if ( empty( $lang ) ) {
-		$lang = pll_current_language();
+		$lang = qtrans_getLanguage();
 	}
 
 	return empty( $lang ) ? home_url( '/' ) : PLL()->links->get_home_url( $lang );
@@ -193,7 +193,7 @@ function pll_esc_attr_e( $string ) {
  * @return string the string translation in the requested language
  */
 function pll_translate_string( $string, $lang ) {
-	if ( PLL() instanceof PLL_Frontend && pll_current_language() == $lang ) {
+	if ( PLL() instanceof PLL_Frontend && qtrans_getLanguage() == $lang ) {
 		return pll__( $string );
 	}
 
