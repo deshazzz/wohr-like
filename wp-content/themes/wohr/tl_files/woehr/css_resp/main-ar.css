@@ -4956,7 +4956,9 @@ p {
 	column-count: 3;
 	column-gap: 20px
 }
-
+span {
+	font-family: 'DroidArabicKufiRegular';
+}
 strong,
 th,
 .table th {
