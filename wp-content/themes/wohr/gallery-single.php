@@ -1,8 +1,17 @@
 <?php 
 /*
- Template Name: gallery-single
-*/
+ * Template Name: gallery-single
+ * Template Post Type: post
+ */
+
 get_header();
+?>
+
+
+<?php
+$post_id = get_the_ID();
+$post = get_post($post_id);
+$gallery = get_post_gallery_images( $post );
 ?>
 
 <div id="container">
@@ -14,71 +23,16 @@ get_header();
 <div class="row">
 <div id="colMain" class="col-sm-12 col-md-12 col-lg-12 ">
 <div id="description">
-<h3>Gallery 2</h3>
+<h3><?php echo $post->post_title ; ?></h3>
 <div class="row">
 <div class="gallery clearfix" id="gallery2">
-
+<?php for($i = 0 ; $i < sizeof($gallery) ; $i++){ ?>
 <div class="col-sm-6 col-md-4 col-lg-4">
 <figure>
-<a href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo Parking Platform WOeHR 501-0c18ec25.jpg" class="fancybox" title="" rel="gallery2"><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo, Parking Platform WOEHR 501-ca253534.jpg"></a>
+<a href="<?php echo $gallery[$i] ?>" class="fancybox" title="" rel="gallery2"><img style="max-height: 196px" height="195" width="352" src="<?php echo $gallery[$i] ?>"></a>
 </figure>
 </div>
-
-<div class="col-sm-6 col-md-4 col-lg-4">
-<figure>
-<a href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/Oslo, Hasle Tarn, Parking Platform WOEHR 501-b45a810e.jpg" class="fancybox" title="" rel="gallery2"><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo Parking Platform WOEHR 501-1a327fa1.jpg"></a>
-</figure>
-</div>
-
-<div class="col-sm-6 col-md-4 col-lg-4">
-<figure>
-<a href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo Parking Platform WOeHR 501-0c18ec25.jpg" class="fancybox" title="" rel="gallery2"><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo, Parking Platform WOEHR 501-ca253534.jpg"></a>
-</figure>
-</div>
-
-<div class="col-sm-6 col-md-4 col-lg-4">
-<figure>
-<a href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/Oslo, Hasle Tarn, Parking Platform WOEHR 501-b45a810e.jpg" class="fancybox" title="" rel="gallery2"><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo Parking Platform WOEHR 501-1a327fa1.jpg"></a>
-</figure>
-</div>
-
-<div class="col-sm-6 col-md-4 col-lg-4">
-<figure>
-<a href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo Parking Platform WOeHR 501-0c18ec25.jpg" class="fancybox" title="" rel="gallery2"><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo, Parking Platform WOEHR 501-ca253534.jpg"></a>
-</figure>
-</div>
-
-<div class="col-sm-6 col-md-4 col-lg-4">
-<figure>
-<a href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/Oslo, Hasle Tarn, Parking Platform WOEHR 501-b45a810e.jpg" class="fancybox" title="" rel="gallery2"><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo Parking Platform WOEHR 501-1a327fa1.jpg"></a>
-</figure>
-</div>
-
-<div class="col-sm-6 col-md-4 col-lg-4">
-<figure>
-<a href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo Parking Platform WOeHR 501-0c18ec25.jpg" class="fancybox" title="" rel="gallery2"><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo, Parking Platform WOEHR 501-ca253534.jpg"></a>
-</figure>
-</div>
-
-<div class="col-sm-6 col-md-4 col-lg-4">
-<figure>
-<a href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/Oslo, Hasle Tarn, Parking Platform WOEHR 501-b45a810e.jpg" class="fancybox" title="" rel="gallery2"><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo Parking Platform WOEHR 501-1a327fa1.jpg"></a>
-</figure>
-</div>
-
-<div class="col-sm-6 col-md-4 col-lg-4">
-<figure>
-<a href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo Parking Platform WOeHR 501-0c18ec25.jpg" class="fancybox" title="" rel="gallery2"><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo, Parking Platform WOEHR 501-ca253534.jpg"></a>
-</figure>
-</div>
-
-<div class="col-sm-6 col-md-4 col-lg-4">
-<figure>
-<a href="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/Oslo, Hasle Tarn, Parking Platform WOEHR 501-b45a810e.jpg" class="fancybox" title="" rel="gallery2"><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/METRISK-Oslo Parking Platform WOEHR 501-1a327fa1.jpg"></a>
-</figure>
-</div>
-
-
+<?php } ?>
 
 </div>
 

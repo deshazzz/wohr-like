@@ -99,9 +99,13 @@ window.location.href=data.selectedData.value;languageIndex=data.selectedIndex}})
                   <li data-alias="services" class="submenu mnl1 products-navi sibling first"><a href="<?php  site_url();?>?page_id=11"
                       title="services" class="submenu mnl1 products-navi sibling first"><?php  if(qtrans_getLanguage() === "ar"){ echo 'خدمات';} else{echo 'Services';} ?></a>
                   </li>
-                  <li data-alias="Gallery" class="submenu sibling"><a href="<?php  site_url();?>?page_id=15" title="Gallery" class="submenu sibling"><?php  if(qtrans_getLanguage() === "ar"){ echo 'المعرض';} else{echo 'Gallery';} ?></a>
+                  <li data-alias="Gallery" class="submenu sibling"><a href="<?php  site_url();?>?page_id=15" title="Gallery" class="submenu sibling"><?php  if(qtrans_getLanguage() === "ar"){ echo 'معرض الصور';} else{echo 'Image gallery';} ?></a>
                   </li>
-                  <li data-alias="about-woehr" class="submenu mnl4 sibling"><a href="<?php  site_url();?>?page_id=5" title="About Roxy parking"
+
+                  <li data-alias="Gallery" class="submenu sibling"><a href="<?php  site_url();?>?page_id=192" title="Gallery" class="submenu sibling"><?php  if(qtrans_getLanguage() === "ar"){ echo 'معرض الفيديو';} else{echo 'Video gallery';} ?></a>
+                  </li>
+
+                  <li data-alias="about-woehr" class="submenu mnl4 sibling"><a href="<?php  site_url();?>?page_id=48" title="About Roxy parking"
                       class="submenu mnl4 sibling"> <?php  if(qtrans_getLanguage() === "ar"){ echo 'عن جراج روكسى';} else{echo 'About Roxy parking';} ?></a>
                   </li>
                   <li data-alias="news" class="mnl5 sibling"><a href="<?php  site_url();?>?page_id=13" title="New version: platform" class="mnl5 sibling"> <?php  if(qtrans_getLanguage() === "ar"){ echo 'الأخبار';} else{echo 'News';} ?></a></li>

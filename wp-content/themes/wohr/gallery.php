@@ -4,75 +4,36 @@ get_header();
  Template Name: Gallery
 */
 ?>
+ <?php 
+ $args = array(
+                              'category_name'    => 'ImageGallery',
+                              'orderby'          => 'date',
+                              'order'            => 'DESC',
+                              'post_type'        => 'post',
+                              'post_status'      => 'publish',
+                            );
+ $posts_array = get_posts( $args );
+                            ?>
 <div id="container">
 <div id="main">
 <div class="inside">
 <div class="mod_article first last block" id="projects">
 <h1 class="ce_headline first">
-Gallery</h1>
+<?php if (qtrans_getLanguage() == "en") { echo "Gallery"; } else { echo "معرض الصور"; } ?></h1>
 <div class="list-projects row">
+<?php foreach ($posts_array as $post) {
+	$postTitle = $post->post_title;
+    $postLink = $post->guid;
+    $image = get_the_post_thumbnail_url($post->ID);
+?>
 <div class="tile col-sm-6 col-md-4 col-lg-4 ">
-<a href="<?php site_url() ?>?page_id=20">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/WOEHR-DenHaag-Parksafe583-1-54459e94.jpg" alt=""></figure>
-<center><h2>Gallery 1 </h2></center>
+<a href="<?php echo $postLink; ?>">
+<figure><img src="<?php echo $image ?>" alt=""></figure>
+<center><h2><?php echo $postTitle; ?></h2></center>
 </a>
 </div>
 
-<div class="tile col-sm-6 col-md-4 col-lg-4 ">
-<a href="<?php site_url() ?>?page_id=20">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/WOEHR-DenHaag-Parksafe583-1-54459e94.jpg" alt=""></figure>
-<center><h2>Gallery 2 </h2></center>
-</a>
-</div>
-
-<div class="tile col-sm-6 col-md-4 col-lg-4 ">
-<a href="<?php site_url() ?>?page_id=20">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/WOEHR-DenHaag-Parksafe583-1-54459e94.jpg" alt=""></figure>
-<center><h2>Gallery 3 </h2></center>
-</a>
-</div>
-
-<div class="tile col-sm-6 col-md-4 col-lg-4 ">
-<a href="<?php site_url() ?>?page_id=20">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/WOEHR-DenHaag-Parksafe583-1-54459e94.jpg" alt=""></figure>
-<center><h2>Gallery 3 </h2></center>
-</a>
-</div>
-
-<div class="tile col-sm-6 col-md-4 col-lg-4 ">
-<a href="<?php site_url() ?>?page_id=20">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/WOEHR-DenHaag-Parksafe583-1-54459e94.jpg" alt=""></figure>
-<center><h2>Gallery 4</h2></center>
-</a>
-</div>
-
-<div class="tile col-sm-6 col-md-4 col-lg-4 ">
-<a href="<?php site_url() ?>?page_id=20">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/WOEHR-DenHaag-Parksafe583-1-54459e94.jpg" alt=""></figure>
-<center><h2>Gallery 5 </h2></center>
-</a>
-</div>
-
-<div class="tile col-sm-6 col-md-4 col-lg-4 ">
-<a href="<?php site_url() ?>?page_id=20">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/WOEHR-DenHaag-Parksafe583-1-54459e94.jpg" alt=""></figure>
-<center><h2>Gallery 6 </h2></center>
-</a>
-</div>
-
-<div class="tile col-sm-6 col-md-4 col-lg-4 ">
-<a href="<?php site_url() ?>?page_id=20">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/WOEHR-DenHaag-Parksafe583-1-54459e94.jpg" alt=""></figure>
-<center><h2>Gallery 7 </h2></center>
-</a>
-</div>
-
-<div class="tile col-sm-6 col-md-4 col-lg-4 ">
-<a href="<?php site_url() ?>?page_id=20">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/tl_files/woehr/img/WOEHR-DenHaag-Parksafe583-1-54459e94.jpg" alt=""></figure>
-<center><h2>Gallery 8 </h2></center>
-</a>
-</div>
+<?php } ?>
 
 </div>
 </div>
